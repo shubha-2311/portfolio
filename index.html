@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shubhadeep Sarkar — Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Shubhadeep Sarkar — M.Sc. Computer Science student and developer. Projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#ffffff;--card:#fbfbfb;--muted:#6b7280;--accent:#0f172a;--glass:rgba(15,23,42,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.4;color:var(--accent);background:var(--bg);margin:0}
+    .container{max-width:960px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,#e6eefc,#f8fafc);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    h1{font-size:28px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+
+    main{display:grid;grid-template-columns:1fr 320px;gap:28px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,12,12,0.04)}
+    .hero{padding:18px}
+    .hero .intro{display:flex;align-items:flex-start;gap:18px}
+    .role{font-weight:600;color:#0b1220}
+    .cta{margin-top:14px;display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--glass);background:white;cursor:pointer;font-weight:600}
+    .btn.primary{background:#0b1220;color:white;border:none}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .pill{padding:8px 10px;border-radius:999px;border:1px solid var(--glass);font-size:13px;color:var(--muted)}
+
+    .projects{display:grid;gap:12px}
+    .project{display:flex;flex-direction:column;gap:8px;padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid var(--glass)}
+    .project .meta{font-size:13px;color:var(--muted)}
+    pre.code{background:#0b122020;padding:12px;border-radius:8px;overflow:auto;font-size:13px}
+    .mail-btn {
+    background: #0b1220;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.mail-btn:hover {
+    opacity: 0.85;
+}
+    aside .contact{display:flex;flex-direction:column;gap:10px}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+    .section-title{font-size:14px;color:var(--muted);margin-bottom:8px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){main{grid-template-columns:1fr}header{flex-direction:column;align-items:flex-start;gap:12px}.avatar{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">SS</div>
+        <div>
+          <h1>Shubhadeep Sarkar</h1>
+          <p class="lead">Theoritical • M.Sc. Computer Science (IACS) •  ML enthusiast</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card hero">
+          <div class="intro">
+            <div style="flex:1">
+              <div class="role">Full‑stack & ML Developer</div>
+              <p style="margin-top:8px">I build secure systems and ML solutions. Currently pursuing M.Sc. in Computer Science at Indian Association for the Cultivation of Science. I like competitive programming, CTFs and system design.</p>
+
+              <div class="cta">
+                <!-- <button class="btn primary" onclick="openContact()">Hire / Reach out</button> -->
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbttzBsMQFPxGnsdDXnZGwfxQftBScpQSPvzlDvwbnkxfWqJsfnvrXDqLJsnbGGJqVqxnF" class="btn">Email Me</a>
+
+                <a class="btn" href="#projects">See projects</a>
+              </div>
+
+              <div id="skills" style="margin-top:16px">
+                <div class="section-title"><b>Top skills</b></div>
+                <div class="skills">
+                  <div class="pill">Python</div>
+                  <div class="pill">C</div>
+                  <div class="pill">Java</div>
+                  <div class="pill">C#</div>
+                  <div class="pill">MySQL</div>
+                  <div class="pill">HTML / CSS / JS</div>
+                  <div class="pill">Machine Learning</div>
+                  <div class="pill">Cryptography / CTFs</div>
+                </div>
+              </div>
+            </div>
+            <div style="width:138px">
+              <div class="card" style="text-align:center;padding:12px">
+                <div style="font-weight:700">Education</div>
+                <ul>
+                  <li><div style="font-size:13px;color:var(--muted);margin-top:6px">M.Sc. Computer Science — IACS (from Aug 2025)</div></li>
+                  <li><div style="font-size:13px;color:var(--muted);margin-top:6px">B.Sc. Computer Science — Ramakrishna Mission Vidyamandira (CGPA: 9.49)</div></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="projects" class="card" style="margin-top:18px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700">Selected Projects</div>
+            <div style="font-size:13px;color:var(--muted)">Open-source ready • Add repo links</div>
+          </div>
+
+          <div class="projects" style="margin-top:12px">
+            <!-- Replace the placeholders below with your real projects and repo links -->
+            <!-- <div class="project">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div style="font-weight:700">Adaptive GAN-Driven Cryptographic Key Exchange for Enhanced Secure Communication Protocols</div>
+                <div class="meta">Python, PyTorch • B.Sc project</div>
+              </div>
+              <div class="meta">A GAN-based system for dynamic key generation and secure communication. Implemented adversarial training between encryptor/decryptor and an adversary.</div>
+              <pre class="code"># Example usage
+python train.py --epochs 100 --batch 128</pre>
+              <div style="display:flex;gap:8px;margin-top:6px">
+                <a class="btn" href="#">View Repo</a>
+                <a class="btn" href="#">Live Demo</a>
+              </div>
+            </div> -->
+
+            <div class="project">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div style="font-weight:700">chess-game</div>
+                <div class="meta">Python • pygame</div>
+              </div>
+              <div class="meta">It supports classic chess rules including castling, pawn promotion, and checkmate detection. Features a user-friendly graphical interface, player name input, and game-over detection. Ideal for learning Pygame or showcasing Python game development projects.</div>
+              <pre class="code">python Chess.py</pre>
+              <div style="display:flex;gap:8px;margin-top:6px">
+                <a class="btn" href="https://github.com/shubha-2311/chess-game">View Repo</a>
+                <a class="btn" href="#">Demo</a>
+              </div>
+            </div>
+
+            <!-- <div class="project">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div style="font-weight:700">Gender Classification (ResNet)</div>
+                <div class="meta">PyTorch • Face detection • MTCNN</div>
+              </div>
+              <div class="meta">Face-cropped dataset training, techniques to handle class imbalance and reduce overfitting. Achieved strong cross-val results.</div>
+              <div style="display:flex;gap:8px;margin-top:6px">
+                <a class="btn" href="#">View Repo</a>
+              </div>
+            </div> -->
+
+            <!-- add more project blocks as needed -->
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div style="font-weight:700">Achievements & Certifications</div>
+          <ul style="margin-top:8px;color:var(--muted);padding-left:18px">
+            <li>NPTEL: Problem Solving Through Programming in C — Elite (IIT Kgp)</li>
+            <li>NPTEL: Programming in JAVA — Elite (IIT Kgp)</li>
+            <li>NPTEL: Discrete Mathematics — Elite (IIT Madras)</li>
+            <li>NPTEL: DBMS — Elite (IIT Kgp)</li>
+            <li>ureckon'24 Cyber Cipher (CTF) — 2nd place</li>
+            <li>VITMEE 2025 — AIR 88</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card contact">
+          <div style="font-weight:700">Contact</div>
+          <div style="color:var(--muted);font-size:13px">Basirhat, North 24 Parganas, West Bengal</div>
+          <div style="margin-top:8px">
+            <div class="section-title">Email</div>
+            <a id="emailLink" href="mailto:shubhadeeps81@gmail.com">shubhadeeps81@gmail.com</a>
+          </div>
+          <div style="margin-top:8px">
+            <div class="section-title">Phone</div>
+            <div style="font-weight:700">+91 ***** *****</div>
+          </div>
+
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn" href="#" onclick="openLink('https://github.com/shubha-2311')">GitHub</a>
+            <a class="btn" href="#" onclick="openLink('https://www.linkedin.com/in/shubhadeep-sarkar-4915b4320')">LinkedIn</a>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="section-title">Subjects of Interest</div>
+            <div style="color:var(--muted);font-size:13px">Automata, Machine Learning, Cybersecurity, Operating System, Computer Network</div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div class="section-title">Languages</div>
+            <div style="color:var(--muted);font-size:13px">English • Bengali • Hindi</div>
+          </div>
+
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      Built with ❤️ • Hosted on GitHub Pages • <a href="resume.pdf" download>Download my Resume (PDF)</a>
+    </footer>
+  </div>
+
+  <script>
+    function openContact(){ window.location.href = 'mailto:shubhadeeps81@gmail.com'; }
+    function openLink(url){ window.open(url, '_blank'); }
+  </script>
+</body>
+</html>
